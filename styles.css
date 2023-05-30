@@ -1,0 +1,87 @@
+/* Utilizar una fuente en línea de Inter en lugar de especificar "inter" como fuente genérica */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+/* Establecer una altura mínima en el cuerpo y el contenedor principal para que ocupe todo el espacio disponible */
+body,
+main {
+  min-height: 100vh;
+}
+
+/* Establecer un color de fondo más oscuro y una fuente más clara */
+body {
+  background: #f2f2f2;
+  color: #333;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Establecer el estilo para el contenedor principal */
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Establecer el estilo para el área del texto sin encriptar */
+.textArea {
+  background: white;
+  border: none;
+  color: blue;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px;
+  text-transform: lowercase;
+  width: 50%;
+}
+
+/* Establecer el estilo para el área del texto encriptado */
+.mensaje {
+  background: white url("/Assets/Muñeco.png") no-repeat 95% center;
+  background-size: contain;
+  border: none;
+  border-radius: 24px;
+  color: blue;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 10px 10px 10px 50px;
+  width: 50%;
+}
+
+/* Ajustar el estilo de los botones y ajustar los márgenes */
+.botones {
+  display: flex;
+  margin-top: 20px;
+}
+
+#encriptar,
+#desencriptar,
+#copiar {
+  background: blue;
+  border: none;
+  border-radius: 24px;
+  color: white;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  height: 67px;
+  margin-right: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+#desencriptar {
+  background: gray;
+  color: blue;
+}
